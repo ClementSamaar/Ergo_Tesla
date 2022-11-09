@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="car_name">Simone</h1>
+            <section id="car_charge_section">
+                <h2 class="hidden">Car charge</h2>
+                <progress id="car_charge_indicator" max="100" value="71"></progress>
+                <p id="car_charge_value">71%</p>
+            </section>
+            <section id="car_current_status_section">
+                <h2 class="hidden">Current status</h2>
+                <p id="car_current_status">Parked</p>
+            </section>
+            <section id="car_location_section">
+                <h2 class="hidden">Car location</h2>
+                <img src="img/location_icon.png" alt="" id="car_location_icon">
+                <p id="car_location">13 Rue Paul Guigou</p>
+            </section>
+            <a href="user_account.html" id="user_account_link"><img src="img/user_icon.png" alt="Access to user account" id="user_icon"></a>
+        </header>
+
+        <section id="car_display_section">
+            <h2 class="hidden">Car display</h2>
+            <img src="img/Tesla_Icons/index_tesla_display.png" alt="" id="index_tesla_display">
+        </section>
+
+        <menu id="quick_menu">
+            <li class="quick_menu_edge_item" id="quick_menu_h2"><h2 class="hidden">Quick actions menu</h2></li>
+            <li><input type="image" src="img/iMoi_icon.png" alt="Quick sentinel feature" id="quick_sentinel" class="quick_menu_icon"></li>
+            <li><input type="image" src="img/clim_icon.png" alt="Quick climatisation feature" id="quick_clim" class="quick_menu_icon"></li>
+            <li><input type="image" src="img/charge_icon.png" alt="Quick battery saver feature" id="quick_charge" class="quick_menu_icon"></li>
+            <li class="quick_menu_edge_item"><input type="image" src="img/trunk_icon.png" alt="Quick trunk opening feature" id="quick_trunk" class="quick_menu_icon"></li>
+        </menu>
+    </main>
+
+    <nav>
+        <h2 class="hidden">Navigation</h2>
+        <ul>
+            <li>
+                <a href="controls.html">
+                    <img src="img/controls_icon.png" alt="Controls feature" class="nav_icon">
+                    <section class="nav_p_section">
+                        <h3 class="hidden">Controls access button</h3>
+                        <p class="nav_p">Controls</p>
+                    </section>
+
+                </a>
+            </li>
+            <li>
+                <a href="climatisation.html">
+                    <img src="img/clim_icon.png" alt="Climatisation feature" class="nav_icon">
+                    <section class="nav_p_section">
+                        <h3 class="hidden">Climatisation manager button</h3>
+                        <p class="nav_p">Climatisation</p>
+                        <p class="nav_sub_p" id="car_temperature">Inside 23°C</p>
+                    </section>
+                </a>
+            </li>
+            <li>
+                <a href="planification.html">
+                    <img src="img/planification_icon.png" alt="Planification feature" class="nav_icon">
+                    <section class="nav_p_section">
+                        <h3 class="hidden">Planification access button</h3>
+                        <p class="nav_p">Planification</p>
+                    </section>
+                </a>
+            </li>
+            <li>
+                <a href="security.html">
+                    <img src="img/security_icon.png" alt="Security feature" class="nav_icon">
+                    <section class="nav_p_section">
+                        <h3 class="hidden">Security options button</h3>
+                        <p class="nav_p">Security</p>
+                        <p class="nav_sub_p" id="iMoi_status">iMoi - Connected</p>
+                    </section>
+                </a>
+            </li>
+            <li>
+                <a href="stats.html">
+                    <img src="img/stat_icon.png" alt="Statistics feature" class="nav_icon">
+                    <section class="nav_p_section">
+                        <h3 class="hidden">Statistics overview button</h3>
+                        <p class="nav_p">Charge stats</p>
+                    </section>
+                </a>
+            </li>
+            <li>
+                <a href="updates.html">
+                    <img src="img/updates_icon.png" alt="Updates feature" class="nav_icon">
+                    <section class="nav_p_section">
+                        <h3 class="hidden">Updates manager button</h3>
+                        <p class="nav_p">Updates</p>
+                    </section>
+
+                </a>
+            </li>
+            <li>
+                <a href="service.html">
+                    <img src="img/service_icon.png" alt="Service feature" class="nav_icon">
+                    <section class="nav_p_section">
+                        <h3 class="hidden">Services access button</h3>
+                        <p class="nav_p">Service</p>
+                    </section>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
