@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Charge statistics</title>
+    <link rel="stylesheet" type="text/css" href="style/stat.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+    <a href="index.html" id="back_btn"><img src="img/back_btn_icon.png" alt="Allows you to reach the home page"></a>
     <header>
         <h1 id="car_name">Simone</h1>
         <section id="car_charge_section">
@@ -23,31 +26,74 @@
         </section>
         <a href="user_account.html" id="user_account_link"><img src="img/user_icon.png" alt="Access to user account" id="user_icon"></a>
     </header>
-    <section id="charge_stat_graph">
-        <h2 class="hidden">Charge chart</h2>
-        <img src="" alt="Car charge chart" id="car_charge_chart">
+    <section id="charge_stat_graph_section">
+        <h2>Charging statistiques</h2>
+        <p id="charge_stat_sub_header">For the last 31 days</p>
+        <p id="charge_stat_total_charge_label">Total recharging</p>
+        <data value="25" id="charge_stat_total_charge">25<small>kWh</small></data>
+        <p id="charge_stat_total_cost_label">Total expense</p>
+        <data value="4" id="charge_stat_total_cost">4$</data>
+        <img src="img/car_stat_graph.PNG" alt="Car charge chart" id="car_charge_chart">
         <ul id="graph_caption">
             <li>
-                <img src="" alt="">
-                <p>Home</p>
+                <img src="img/home_icon.png" alt="">
+                <p>
+                    <data value="100">100%</data>
+                    <label>Home</label>
+                </p>
             </li>
             <li>
-                <img src="" alt="">
-                <p>Supercharger</p>
+                <img src="img/charge_icon_red.png" alt="">
+                <p>
+                    <data value="0">0%</data>
+                    <label>Supercharger</label>
+                </p>
             </li>
             <li>
-                <img src="" alt="">
-                <p>Work</p>
+                <img src="img/briefcase_icon.png" alt="">
+                <p>
+                    <data value="0">0%</data>
+                    <label>Work</label>
+                </p>
             </li>
             <li>
-                <img src="" alt="">
-                <p>Other</p>
+                <img src="img/electric_plug_icon.png" alt="">
+                <p>
+                    <data value="0">0%</data>
+                    <label>Other</label>
+                </p>
             </li>
         </ul>
     </section>
-    <section id="other_charge_stat">
-        <h2 class="hidden">Other charge statistics</h2>
-
+    <section id="gas_economies">
+        <h2>Gas economy</h2>
+        <p>You have to recharge your car for at least 75 kWh to have a gas economy estimation</p>
     </section>
+    <section id="average_cost">
+        <h2>Average cost - <small>Per kWh</small></h2>
+        <ul>
+            <li>
+                <h3>Home</h3>
+                <data value="0" id="home_average_cost">0,00$</data>
+            </li>
+            <li>
+                <h3>Supercharger</h3>
+                <data value="0" id="supercharger_average_cost">0,00$</data>
+            </li>
+            <li>
+                <h3>Work</h3>
+                <data value="0" id="workplace_average_cost">0,00$</data>
+            </li>
+            <li>
+                <h3>Other</h3>
+                <data value="0" id="othersources_average_cost">0,00$</data>
+            </li>
+        </ul>
+    </section>
+    <a href="settings_btn.html" id="settings_btn">
+        <img src="img/settings_icon.png" alt="">
+        <p>Settings</p>
+    </a>
+    <small id="currency_display_information">The currency displayed depends on your phone's language (english) and country (US)</small>
 </body>
 </html>

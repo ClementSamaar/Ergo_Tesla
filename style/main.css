@@ -5,7 +5,7 @@ html{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: #111;
+    background-color: #161718;
     font-size: 2.65rem;
     font-family: -apple-system, sans-serif;
 }
@@ -142,8 +142,8 @@ header{
 /* -- HEADER -- */
 
 #car_display_section{
-    width: 100%;
-    height: 97%;
+   /* width: 100%;
+    height: 97%;*/
     grid-column-start: 1;
     grid-row-start: 2;
     display: flex;
@@ -153,11 +153,10 @@ header{
 }
 
 #index_tesla_display{
-    width: 90%;
+    width: 100%;
 }
 
 #quick_menu{
-    width: 90%;
     height: 75%;
     grid-column-start: 2;
     grid-row-start: 2;
@@ -192,7 +191,7 @@ header{
 }
 
 .quick_menu_icon{
-    height: 55%;
+    width: 80%;
 }
 
 /* -- MAIN -- */
@@ -368,7 +367,7 @@ nav > ul > li > a:hover{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (orientation: portrait){
     html{
         overflow: scroll;
         font-size: 1.9rem;
@@ -472,5 +471,14 @@ nav > ul > li > a:hover{
 
     nav > ul > li{
         height: 11%;
+    }
+
+    /** STATS PAGE **/
+    #stat_header{
+        width: 75%;
+        display: flex;
+        flex-direction: row;
+        justify-self: center;
+        justify-content: space-between;
     }
 }

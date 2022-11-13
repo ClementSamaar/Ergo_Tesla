@@ -1,0 +1,819 @@
+html{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #161718;
+    font-family: -apple-system, sans-serif;
+    font-size: 2.65rem;
+}
+
+.hidden{
+    position: absolute;
+    left: -9000px;
+}
+
+h2{
+    color: white;
+    font-size: 0.7em;
+}
+
+h3 {
+    font-size: 0.5em;
+}
+
+p {
+    font-size: 0.475em;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 15% 5% 20% 30% 15% 15%;
+    grid-template-columns: 10% 50% 30% 10%;
+}
+
+#back_btn{
+    position: absolute;
+    left: -9000px;
+}
+
+header{
+    grid-column: 2/span 2;
+    grid-row-start: 1;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 36% 33% 17% 13%;
+    justify-items: start;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    border-bottom: solid 0.05em lightgrey;
+}
+
+#car_current_status_section{
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+#car_current_status {
+    color: lightgrey;
+    font-size: 0.425em;
+}
+
+#car_location_section{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    color: lightgrey;
+}
+
+#car_location_icon{
+    height: 90%;
+}
+
+#car_name{
+    grid-column-start: 2;
+    grid-row: 2/span 2;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.35em;
+}
+
+#user_account_link{
+    grid-column-start: 3;
+    grid-row: 2/span 2;
+    height: 95%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#user_icon{
+    height: 100%;
+}
+
+#car_charge_section{
+    grid-column-start: 4;
+    grid-row: 2/span 2;
+    width: 55%;
+    height: 50%;
+    order: 5;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+#car_charge_indicator{
+    height: 100%;
+    flex: 1.4;
+    border: solid 0.06em black;
+    border-radius: 0.08em;
+}
+
+#car_charge_value{
+    flex: 1.8;
+    text-align: end;
+    margin-left: 3%;
+    color: white;
+}
+
+#charge_stat_graph_section{
+    grid-column: 1/span 2;
+    grid-row: 3/span 5;
+    display: grid;
+    grid-template-rows: 10% 7% 10% 3% 70%;
+    grid-template-columns: 30% 25% 45%;
+}
+
+#charge_stat_graph_section > h2 {
+    grid-column: 1/span 2;
+    grid-row-start: 1;
+    margin-bottom: 0;
+    margin-top: 0.3em;
+}
+
+#charge_stat_sub_header {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin-top: 0;
+    color: white;
+    font-size: 0.4em;
+}
+
+#charge_stat_total_charge_label{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    height: 50%;
+    font-size: 0.475em;
+    margin-top: 0;
+    color: lightgrey;
+}
+
+#charge_stat_total_charge{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    align-self: end;
+    font-size: 0.575em;
+    color: white;
+}
+
+#charge_stat_total_cost_label{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    height: 50%;
+    font-size: 0.475em;
+    margin-top: 0;
+    color: lightgrey;
+}
+
+#charge_stat_total_cost{
+    grid-column-start: 2;
+    grid-row-start: 3;
+    align-self: end;
+    font-size: 0.575em;
+    color: white;
+}
+
+#car_charge_chart{
+    grid-column: 1/span 2;
+    grid-row-start: 5;
+    width: 100%;
+}
+
+#charge_stat_graph_section > ul{
+    grid-column-start: 3;
+    grid-row-start: 5;
+    margin: 0;
+}
+
+#charge_stat_graph_section > ul > li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 20%;
+}
+
+#charge_stat_graph_section > ul > li > img {
+    height: 60%;
+}
+
+#charge_stat_graph_section > ul > li > p {
+    display: flex;
+    flex-direction: column;
+}
+
+#charge_stat_graph_section > ul > li > p > data {
+    color: white;
+}
+
+#charge_stat_graph_section > ul > li > p > label {
+    color: lightgrey;
+    font-size: 0.775em;
+}
+
+#gas_economies{
+    height: 90%;
+    grid-column: 3/span 2;
+    grid-row-start: 3;
+    border-bottom: solid 0.05em lightgrey;
+}
+
+#gas_economies > h2 {
+    color: white;
+    margin-bottom: 0;
+    margin-top: 0.3em;
+}
+
+#gas_economies > p {
+    color: lightgrey;
+    font-size: 0.4em;
+}
+
+#average_cost{
+    grid-column: 3/span 2;
+    grid-row-start: 4;
+    align-self: start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    border-bottom: solid 0.05em lightgrey;
+    padding-bottom: 2%;
+}
+
+#average_cost > h2{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 0;
+}
+
+#average_cost > h2 > small{
+    font-size: 15px;
+    color: lightgrey;
+}
+
+#average_cost > ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#average_cost > ul > li{
+    list-style: none;
+    margin-left: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#average_cost > ul > li > h3{
+    margin-top: 0.1em;
+    color: white;
+    margin-bottom: 0.2em;
+}
+
+#average_cost > ul > li > data{
+    color: lightgrey;
+    font-size: 0.475em;
+    margin-bottom: 0.2em;
+}
+
+#settings_btn{
+    width: 90%;
+    grid-column: 3/span 2;
+    grid-row-start: 5;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-self: flex-start;
+    align-items: center;
+    text-decoration: none;
+    transition: 500ms;
+    border: solid 0.05em lightgrey;
+    border-radius: 0.5em;
+    background-color: #222;
+    box-shadow: 0.2em 0.2em 0.5em #222;
+}
+
+#settings_btn:hover{
+    transition: 500ms;
+    background-color: #333;
+    box-shadow: 0.4em 0.4em 0.5em #222;
+}
+
+#settings_btn > img {
+    width: 15%;
+}
+
+#settings_btn > p {
+    color: white;
+}
+
+#currency_display_information{
+    grid-column: 3/span 2;
+    grid-row-start: 6;
+    color: lightgrey;
+    font-size: 0.375em;
+}
+
+@media screen and (aspect-ratio: 4/3) and (min-width: 1024px) and (min-height: 768px),
+screen and (min-width: 620px) and (max-width: 1280px) and (min-height: 620px) and (orientation: landscape){
+    html{
+        font-size: 2.25rem;
+    }
+
+    body{
+        width: 90%;
+    }
+
+    #back_btn{
+        position: inherit;
+        left: 0;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #back_btn > img {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 620px) and (max-width: 1280px) and (orientation: portrait){
+    html{
+        font-size: 3.8rem;
+        overflow: scroll;
+    }
+
+    body{
+        display: grid;
+        grid-template-rows: 5% 22% 2.5% 60% 5% 17% 27% 12% 15%;
+        grid-template-columns: 98%;
+        height: 100%;
+    }
+
+    #back_btn{
+        position: inherit;
+        left: 0;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        justify-self: start;
+        align-self: center;
+    }
+
+    #back_btn > img {
+        width: 40%;
+    }
+
+    header{
+        width: 100%;
+        grid-column: 1;
+        grid-row-start: 2;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 40% 30% 30%;
+        align-items: start;
+    }
+
+    #car_name{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        font-size: 1.35em;
+        text-align: left;
+    }
+
+    #car_current_status_section{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    #car_current_status{
+        margin: 0;
+        font-size: 0.425em;
+    }
+
+    #car_location_section{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #car_location{
+        margin: 0;
+    }
+
+    #car_location_icon{
+        height: 50%;
+    }
+
+    #user_account_link{
+        width: 95%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-row: 1 / span 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    #user_icon{
+        height: 60%;
+    }
+
+    #car_charge_section{
+        width: 75%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-row-start: 3;
+        display: flex;
+        flex-direction: row;
+        justify-self: end;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #car_charge_indicator{
+        width: 15%;
+        height: 45%;
+        flex: 1;
+        border: solid 0.06em black;
+        border-radius: 0.1em;
+    }
+
+    #car_charge_value{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    #charge_stat_graph_section{
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-template-rows: 6% 4.2% 6% 1.8% 28%;
+        grid-template-columns: 30% 35% 35%;
+    }
+
+    #gas_economies{
+        grid-row-start: 6;
+        grid-column-start: 1;
+        width: 98%;
+    }
+
+    #average_cost{
+        grid-row-start: 7;
+        grid-column-start: 1;
+        width: 98%;
+    }
+
+    #settings_btn{
+        grid-row-start: 8;
+        grid-column-start: 1;
+        width: 97%;
+    }
+
+    #currency_display_information{
+        grid-row-start: 9;
+        grid-column-start: 1;
+    }
+}
+
+@media screen and (max-width: 600px){
+    html{
+        font-size: 2.4rem;
+        overflow: scroll;
+    }
+
+    body{
+        display: grid;
+        grid-template-rows: 5% 22% 2.5% 70% 5% 15% 25% 12% 15%;
+        grid-template-columns: 98%;
+        height: 100%;
+    }
+
+    #back_btn{
+        position: inherit;
+        left: 0;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        justify-self: start;
+        align-self: center;
+    }
+
+    #back_btn > img {
+        width: 40%;
+    }
+
+    header{
+        width: 100%;
+        grid-column: 1;
+        grid-row-start: 2;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 40% 30% 30%;
+        align-items: start;
+    }
+
+    #car_name{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        font-size: 1.35em;
+        text-align: left;
+    }
+
+    #car_current_status_section{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    #car_current_status{
+        margin: 0;
+        font-size: 0.425em;
+    }
+
+    #car_location_section{
+        width: 100%;
+        height: 100%;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #car_location{
+        margin: 0;
+    }
+
+    #car_location_icon{
+        height: 50%;
+    }
+
+    #user_account_link{
+        width: 95%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-row: 1 / span 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+    }
+
+    #user_icon{
+        height: 60%;
+    }
+
+    #car_charge_section{
+        width: 75%;
+        height: 100%;
+        grid-column-start: 2;
+        grid-row-start: 3;
+        display: flex;
+        flex-direction: row;
+        justify-self: end;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #car_charge_indicator{
+        width: 15%;
+        height: 45%;
+        flex: 1;
+        border: solid 0.06em black;
+        border-radius: 0.1em;
+    }
+
+    #car_charge_value{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    #charge_stat_graph_section{
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-template-rows: 6% 3% 6% 29% 20%;
+        grid-template-columns: 50% 50%;
+    }
+
+    #car_charge_chart{
+        grid-column: 1/span 2;
+        grid-row-start: 4;
+        width: 95%;
+    }
+
+    #charge_stat_graph_section > ul{
+        grid-column: 1/span 2;
+        grid-row-start: 5;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: start;
+        justify-content: center;
+        height: 90%;
+        padding: 0;
+        margin-top: 5%;
+    }
+
+    #charge_stat_graph_section > ul > li{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 35%;
+        width: 40%;
+    }
+
+    #charge_stat_graph_section > ul > li > img {
+        height: 60%;
+    }
+
+    #charge_stat_graph_section > ul > li > p {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #charge_stat_graph_section > ul > li > p > data {
+        color: white;
+    }
+
+    #charge_stat_graph_section > ul > li > p > label {
+        color: lightgrey;
+        font-size: 0.775em;
+    }
+
+    #gas_economies{
+        grid-row-start: 6;
+        grid-column-start: 1;
+        width: 98%;
+    }
+
+    #average_cost{
+        grid-row-start: 7;
+        grid-column-start: 1;
+        width: 98%;
+    }
+
+    #settings_btn{
+        grid-row-start: 8;
+        grid-column-start: 1;
+        width: 97%;
+    }
+
+    #currency_display_information{
+        grid-row-start: 9;
+        grid-column-start: 1;
+    }
+}
+
+@media screen and (max-height: 600px) and (orientation: landscape){
+    html{
+        font-size: 2rem;
+        overflow: scroll;
+    }
+
+    body{
+        overflow: scroll;
+        display: grid;
+        grid-template-rows: 10% 20% 40% 20%;
+        grid-template-columns: 100% 100%;
+        height: 100%;
+    }
+
+    #back_btn{
+        position: inherit;
+        left: 0;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        justify-self: start;
+        align-self: center;
+    }
+
+    #back_btn > img {
+        width: 40%;
+    }
+
+    header {
+        position: absolute;
+        left: -9000px;
+    }
+
+    #charge_stat_graph_section{
+        grid-column: 1;
+        grid-row: 2/span 3;
+        grid-template-rows: 10% 7% 3% 35% 35%;
+        grid-template-columns: 50% 15% 25%;
+    }
+
+    #charge_stat_total_charge_label{
+        grid-column-start: 3;
+        grid-row-start: 4;
+        justify-self: center;
+        align-self: start;
+        margin-top: 10%;
+    }
+
+    #charge_stat_total_charge{
+        grid-column-start: 3;
+        grid-row-start: 4;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #charge_stat_total_cost_label{
+        grid-column-start: 3;
+        grid-row-start: 5;
+        justify-self: center;
+        margin-top: 10%;
+    }
+
+    #charge_stat_total_cost{
+        grid-column-start: 3;
+        grid-row-start: 5;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #car_charge_chart{
+        grid-column-start: 1;
+        grid-row: 3/span 3;
+        width: 62%;
+    }
+
+    #charge_stat_graph_section > ul{
+        grid-column-start: 2;
+        grid-row: 4/span 2;
+        padding: 0;
+    }
+
+    #charge_stat_graph_section > ul > li {
+        height: 27%;
+    }
+
+    #gas_economies{
+        grid-row-start: 2;
+        grid-column-start: 2;
+        width: 98%;
+    }
+
+    #average_cost{
+        grid-row-start: 3;
+        grid-column-start: 2;
+        width: 98%;
+    }
+
+    #settings_btn{
+        grid-row-start: 4;
+        grid-column-start: 2;
+        width: 97%;
+        height: 70%;
+    }
+
+    #settings_btn > img {
+        width: 8%;
+    }
+
+    #currency_display_information{
+        grid-row-start: 5;
+        grid-column-start: 2;
+    }
+}
+
+
